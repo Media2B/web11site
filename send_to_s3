@@ -1,0 +1,4 @@
+#!/bin/bash
+aws s3 sync . s3://web11.org/ --delete --exclude ".git/*"
+# sync: Recursively copies new and updated files from the source directory to the destination.
+# --delete: Files that exist in the destination but not in the source are deleted during sync.
