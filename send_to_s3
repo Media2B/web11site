@@ -2,3 +2,4 @@
 aws s3 sync . s3://web11.org/ --delete --exclude ".git/*"
 # sync: Recursively copies new and updated files from the source directory to the destination.
 # --delete: Files that exist in the destination but not in the source are deleted during sync.
+# More: http://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
